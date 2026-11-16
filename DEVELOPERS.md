@@ -265,11 +265,13 @@ Errors have one shape, and `message` is written to be shown to a person as is:
 | `busy` | 429 | Too many requests waiting. Retry after the delay. |
 | `out_of_memory` | 503 | Not enough memory right now. Retry after the delay. |
 | `hub_paused` | 503 | Background work is paused for battery or heat. |
+| `internal_error` | 500 | Something broke inside Localist. Try again. |
 
 ## Checking on Localist
 
 `GET /hub/v1/status` returns memory, the model in memory, heat, power and the queue, plus your
-own app's recent activity. Add `?stream=true` for one update per second.
+own app's recent activity. Add `?stream=true` for an update whenever something changes, and at
+least every ten seconds.
 
 ## Things to know
 
@@ -277,4 +279,10 @@ own app's recent activity. Add `?stream=true` for one update per second.
   model takes a few seconds.
 - Ask for `max_tokens` when you only need a short answer. It'll save time.
 - `n` other than 1 isn't supported.
+- Every `POST` needs `Content-Type: application/json`.
+- A `session_id` belongs to your app. Another app using the same name gets its own conversation.
+- One app can have eight requests waiting; the ninth gets `busy`. A request can carry eight
+  images of up to 50 megapixels each.
+- When a model isn't installed, the error's `action_url` (`localist://install?model=…`) opens
+  Localist on the right page. Open it when the person agrees to.
 - Embeddings aren't available yet.

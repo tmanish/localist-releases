@@ -25,20 +25,26 @@ Localist doesn't check for updates on its own yet. New versions are posted on th
 Only apps running on your Mac. Localist can't be reached from other computers on your network,
 and the websites you visit can't use it either, not even ones open on this Mac.
 
-For now, any app on your Mac can use Localist without asking first. A way to approve each app
+For now, any app on your Mac can ask Localist questions without asking you first. Only
+Localist itself can download, remove or switch models. A way to approve each app
 the first time it asks is planned. Until then, the menu bar shows which apps have used
 Localist recently, and how.
 
 ## What Localist keeps on your Mac
 
 - **Your models**, in the Localist Models folder in your home folder.
-- **Your choices**, such as Open at Login.
+- **Your choices**, such as Open at Login and the settings in Settings.
+- **Your chats** from the Chat page, the last 30, so they're still there after a restart. They're
+  in Localist's folder in your Library, readable only by you. Turn off **Keep my chats** in
+  Settings to stop this; that also deletes the ones already kept.
+- **A short log** of what Localist's service did: models woken and put to sleep, downloads,
+  errors. It never contains what you or your apps wrote, or any answer.
 - **Recent activity**: which apps asked, how quickly the model answered, and what Localist did
   on its own. It's kept in memory only, so it's gone when Localist's service restarts.
 
-Questions you ask in the menu bar are kept until you choose **New question** or quit Localist.
-So that follow-ups start faster, the model may also hold a recent conversation in memory for a
-while. That's it. None of it is saved to disk.
+Questions you ask in the menu bar are kept until you choose **New question** or quit Localist,
+and are never saved to disk. So that follow-ups start faster, the model may also hold a recent
+conversation in memory for a while.
 
 To remove everything, see "Removing Localist" in Help.
 

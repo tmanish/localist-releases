@@ -50,18 +50,23 @@ When you open the menu you see:
 
 ## The Localist window
 
-The window has four pages, listed on the left:
+The window has five pages, listed on the left:
 
 - **Cockpit.** The memory dial, speed and heat, the apps using Localist, the models on deck, and
   everything Localist did on its own. Open **Details** for a two-hour memory timeline and the
   technical numbers, and **Copy diagnostics** if you ever need to report a problem.
 - **Models.** The models on your Mac and the ones you can download. Choose **Use this one** to
-  make a model the one apps get, or **Put to sleep** to free its memory. To delete a model, click
-  **…** on its card.
+  make a model the one apps get, or **Put to sleep** to free its memory. To remove a model, click
+  **…** on its card; it moves to the Trash, and emptying the Trash frees the space. Models under
+  **Coming to Localist** haven't been tested yet and can't be downloaded.
 - **Chat.** A longer conversation than the menu bar allows. Pick what you need done (everyday
   help, looking at images, thinking it through, quick replies) and Localist picks the model. Drop
-  an image onto the window, or click **+**, to ask about it.
+  an image onto the window, or click **+**, to ask about it. With **Think it through**, the
+  model's thinking is tucked under the answer; click it to read it. Each answer has **Copy** and
+  **Try again**, and your last 30 chats are under the clock button.
 - **Connected apps.** Which apps have used Localist, when, and how much.
+- **Settings.** Light or dark, Open at Login, whether chats are kept, how much memory to leave
+  for your other apps, how long an idle model stays awake, and how long replies may be.
 
 Closing the window keeps Localist running in the menu bar.
 
@@ -97,6 +102,7 @@ there.
 ## The gear menu
 
 - **Open Localist** opens the window.
+- **Settings…** opens the Settings page.
 - **Open at Login** starts the menu bar app when you log in. Your apps can still use Localist
   without it, because the background part runs on its own.
 - **Restart Localist's Service** restarts the background part. A model in memory is put to
