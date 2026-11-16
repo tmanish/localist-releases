@@ -92,7 +92,12 @@ neither can the websites you visit.
 1. [Download Localist](https://github.com/tmanish/localist-releases/releases/latest/download/Localist.dmg)
    (always the latest version), or pick a file from [Releases](https://github.com/tmanish/localist-releases/releases/latest).
 2. Open it and drag Localist to the Applications folder.
-3. Open Localist from Applications. It lives in the menu bar, not the Dock.
+3. Open Localist from Applications and pick your first model. Localist suggests one for each
+   family that fits your Mac, and shows the download size and how much memory it needs before
+   you choose. Download it, then try a question while you're still in the welcome window.
+
+Localist lives in the menu bar, not the Dock. If you close the window during the download, it
+keeps going, and the menu bar shows how far along it is.
 
 macOS lets you know that Localist added a background item. That's the part that keeps your
 model ready for your apps, even when the menu is closed. You can turn it off any time in
