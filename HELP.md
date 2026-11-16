@@ -61,7 +61,10 @@ The window has five pages, listed on the left:
   **Coming to Localist** haven't been tested yet and can't be downloaded.
 - **Chat.** A longer conversation than the menu bar allows. Pick what you need done (everyday
   help, looking at images, thinking it through, quick replies) and Localist picks the model. Drop
-  an image onto the window, or click **+**, to ask about it. With **Think it through**, the
+  a document or an image onto the window, or click **+**, to ask about it: PDFs, Word and text
+  files are read on your Mac, and a very long one is used from the start as far as fits. The
+  second menu picks a ready-made job, such as **Proofread**, **Summarise** or **Explain
+  simply**, or your own standing instructions. With **Think it through**, the
   model's thinking is tucked under the answer; click it to read it. Each answer has **Copy** and
   **Try again**, and your last 30 chats are under the clock button.
 - **Connected apps.** Which apps have used Localist, when, and how much.
@@ -108,7 +111,7 @@ there.
 - **Restart Localist's Service** restarts the background part. A model in memory is put to
   sleep.
 - **Show Models Folder** opens the folder in Finder.
-- **Help**, **Privacy** and **For Developers** open these pages.
+- **Help**, **Privacy**, **Use with Coding Apps** and **For Developers** open these pages.
 - **Quit Localist** closes the menu bar app. The background part keeps serving your apps.
 
 ## Troubleshooting
