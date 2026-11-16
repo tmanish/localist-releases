@@ -12,8 +12,9 @@ you use can share the same model. Nothing you type leaves your Mac.
    far along it is.
 4. Ask it something in the welcome window, then choose **Start using Localist**.
 
-From then on, Localist lives in the menu bar. Click its icon to ask a question or see how your
-Mac is doing.
+From then on, Localist lives in the menu bar. Click its icon to ask a quick question or see how
+your Mac is doing. Open Localist from Applications (or choose **Open Localist** in its menu) for
+the full window.
 
 macOS tells you that Localist added a background item. That's expected. It's the part that
 keeps your model ready for your apps, even when the menu is closed.
@@ -47,6 +48,23 @@ When you open the menu you see:
 - **Heat.** *Cool*, *Warm*, *Hot* or *Very hot*, as your Mac reports it.
 - **Using Localist now.** Other apps that asked recently, and what they're doing.
 
+## The Localist window
+
+The window has four pages, listed on the left:
+
+- **Cockpit.** The memory dial, speed and heat, the apps using Localist, the models on deck, and
+  everything Localist did on its own. Open **Details** for a two-hour memory timeline and the
+  technical numbers, and **Copy diagnostics** if you ever need to report a problem.
+- **Models.** The models on your Mac and the ones you can download. Choose **Use this one** to
+  make a model the one apps get, or **Put to sleep** to free its memory. To delete a model, click
+  **…** on its card.
+- **Chat.** A longer conversation than the menu bar allows. Pick what you need done (everyday
+  help, looking at images, thinking it through, quick replies) and Localist picks the model. Drop
+  an image onto the window, or click **+**, to ask about it.
+- **Connected apps.** Which apps have used Localist, when, and how much.
+
+Closing the window keeps Localist running in the menu bar.
+
 ## How Localist looks after your memory
 
 AI models need a lot of memory. Localist manages it for you, so you don't have to:
@@ -78,6 +96,7 @@ there.
 
 ## The gear menu
 
+- **Open Localist** opens the window.
 - **Open at Login** starts the menu bar app when you log in. Your apps can still use Localist
   without it, because the background part runs on its own.
 - **Restart Localist's Service** restarts the background part. A model in memory is put to

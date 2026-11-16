@@ -20,8 +20,8 @@ other apps need the room. When it does something on its own, it tells you why.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/localist-menu-bar-dark.png">
-    <img src="assets/localist-menu-bar.png" width="340" alt="Localist in the menu bar, showing the model, free memory, speed and heat">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/localist-cockpit-dark.png">
+    <img src="assets/localist-cockpit.png" width="760" alt="The Localist Cockpit: a memory dial, speed and heat, connected apps, the models on deck, and what Localist did on its own">
   </picture>
 </p>
 
@@ -35,10 +35,18 @@ other apps need the room. When it does something on its own, it tells you why.
   and ask questions about it.
 - **Check on your Mac at a glance.** The menu bar shows how much memory your other apps have
   left, how quickly answers are coming, and whether your Mac is running warm.
+- **Chat in a full window.** Pick what you need done, such as looking at an image or thinking
+  something through, and Localist picks the model. Drop in a photo to ask about it.
+- **Choose your models.** Download others, switch which one apps get, and remove the ones you
+  don't need.
 - **Get your memory back in one click.** Put the model to sleep whenever you like. It wakes
   again the next time something asks.
 
 <p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/localist-menu-bar-dark.png">
+    <img src="assets/localist-menu-bar.png" width="340" alt="Localist in the menu bar, showing the model, free memory, speed and heat">
+  </picture>
   <img src="assets/localist-quick-question.png" width="340" alt="A quick question answered in the Localist menu">
 </p>
 
