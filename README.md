@@ -1,16 +1,13 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/localist-icon-dark.png">
-    <img src="assets/localist-icon.png" width="128" height="128" alt="Localist app icon">
-  </picture>
+  <img src="assets/localist-icon.png" width="128" height="128" alt="Localist app icon">
 </p>
 
 <h1 align="center">Localist</h1>
 
 <p align="center">Your gateway to local AI models.</p>
 
-> **About this repository:** this is where Localist's releases live. Localist's source code is
-> private and isn't published here.
+> **About this repository:** this is where Localist's releases and updates are published, along
+> with its user guide. Localist's source code is private and isn't published here.
 
 Localist puts capable AI models on your Mac and keeps them there. Ask a question from the menu
 bar, let the apps you use share the same model, and never send a word to the cloud. There's no
@@ -79,7 +76,8 @@ collected. Localist goes online for one thing: downloading the models you choose
 Face, where their makers publish them.
 
 Only apps on your Mac can talk to Localist. Other computers on your network can't reach it, and
-neither can the websites you visit.
+neither can the websites you visit. [PRIVACY.md](PRIVACY.md) spells out what Localist keeps on
+your Mac and for how long.
 
 ## Requirements
 
@@ -107,9 +105,27 @@ Each release is signed with the developer's Apple Developer ID and notarized by 
 
 ## For app makers
 
-Localist understands the same chat format as the OpenAI API, at a local address on the Mac:
-`http://127.0.0.1:42042/v1`. Apps and libraries that let you set a custom server address can
-use it as is. There's nothing to sign up for and no API key to manage.
+Localist gives your app a capable AI model with no server to run, no API key and no cost per
+request, and your users' text never leaves their Mac. It understands the same chat format as
+the OpenAI API, at a local address:
+
+```
+http://127.0.0.1:42042/v1
+```
+
+The official OpenAI SDKs for Python and JavaScript work as they are once you point them there,
+and so do most tools that let you set a custom server address. Streaming, tool calling, JSON
+that follows a schema, and questions about images all work. [DEVELOPERS.md](DEVELOPERS.md) has
+examples in Python, JavaScript, Swift and curl, the model names to ask for, and what to expect
+when Localist is busy.
+
+## Help
+
+- [User guide](HELP.md)
+- [Privacy](PRIVACY.md)
+- [For developers](DEVELOPERS.md)
+- In the app: click the gear in the Localist menu, then choose Localist Help, Privacy or For
+  Developers.
 
 ## Feedback
 
