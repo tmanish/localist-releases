@@ -99,7 +99,7 @@ your Mac and for how long.
 
 ## Requirements
 
-- A Mac with Apple silicon and 16 GB of memory or more.
+- An Apple silicon Mac. Localist is designed for 16 GB of unified memory or more. We tested this release on a 24 GB Mac. Testing on a physical 16 GB Mac is pending.
 - macOS 27 or later.
 - Disk space for the models you download. The default model takes about 6 GB.
 
@@ -119,7 +119,10 @@ macOS lets you know that Localist added a background item. That's the part that 
 model ready for your apps, even when the menu is closed. You can turn it off any time in
 System Settings ▸ General ▸ Login Items & Extensions.
 
-Each release is signed with the developer's Apple Developer ID and notarized by Apple.
+Each release is signed with the developer's Apple Developer ID and notarized by Apple. Localist
+keeps itself up to date: it checks for a new version once a day, downloads it in the
+background, and installs it when it next restarts, after checking the developer's signature.
+You can make it ask first in Settings.
 
 ## For app makers
 

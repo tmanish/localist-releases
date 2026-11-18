@@ -71,10 +71,17 @@ The window has five pages, listed on the left:
   Each answer has **Copy** and **Try again**, and your last 30 chats are under the clock button.
 - **Connected apps.** Which apps have used Localist, when, and how much.
 - **Settings.** Light or dark, Open at Login, waking the model as you start to ask, whether chats
-  are kept, how much memory to leave for your other apps, how long an idle model stays awake, and
-  how long replies may be.
+  are kept, updates, how much memory to leave for your other apps, how long an idle model stays
+  awake, and how long replies may be.
 
 Closing the window keeps Localist running in the menu bar.
+
+## Updates
+
+Localist checks for a new version once a day. When there is one, it downloads it in the
+background and installs it the next time Localist restarts; it may also ask, quietly, whether to
+restart now. Every update is checked against the developer's signature first. To check right
+away, or to have Localist ask before installing, open **Settings** and look under **Updates**.
 
 ## How Localist looks after your memory
 
@@ -133,8 +140,15 @@ Closing heavy apps (video editors, games, lots of browser tabs) also gives the m
 
 ## Removing Localist
 
-1. Turn off Localist in System Settings ▸ General ▸ Login Items & Extensions.
-2. Quit Localist and drag it from Applications to the Trash.
-3. To free the disk space, delete the **Localist Models** folder in your home folder.
-4. Optionally, delete the **Localist** folder in your Library's Caches folder. It holds other
-   apps' recent conversations for up to a day, and empties itself after that.
+1. Turn off **Open at Login** in Localist's gear menu. Quit Localist, then turn off its
+   background service in System Settings ▸ General ▸ Login Items & Extensions.
+2. Drag Localist from Applications to the Trash.
+3. To remove downloaded model weights and partial downloads, trash **Localist Models** in your home folder.
+4. In Finder choose **Go ▸ Go to Folder**. Trash `~/Library/Application Support/Localist`
+   to remove saved chats and their attachments, `~/Library/Caches/Localist` to remove
+   conversation caches, and `~/Library/Logs/Localist` to remove the service log. If present,
+   also trash `~/Library/Caches/app.localist.mac` and `~/Library/Caches/app.localist.mac.service`
+   for app, updater and service request caches.
+5. To clear saved preferences, run `defaults delete app.localist.mac` and
+   `defaults delete app.localist.mac.service` in Terminal. An absent domain has nothing to remove.
+   Empty the Trash when you're ready to permanently remove the files you moved there.
