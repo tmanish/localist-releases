@@ -285,4 +285,13 @@ least every ten seconds.
   images of up to 50 megapixels each.
 - When a model isn't installed, the error's `action_url` (`localist://install?model=…`) opens
   Localist on the right page. Open it when the person agrees to.
-- Embeddings aren't available yet.
+- `POST /v1/completions` continues a piece of text as it stands (`prompt`, optional `suffix`,
+  `max_tokens`, `stop`, `stream`). It is meant for completion as you type: it keeps no
+  conversation and never goes ahead of someone's question. Temperature is 0 unless you set it,
+  which is also when Ornith 1.5 and Qwen 3.5 9B can use their drafters and answer about 1.6 times
+  as fast. Chat at `temperature: 0` gets the same speed-up on Ornith.
+- `POST /v1/embeddings` turns text into vectors for search, in OpenAI's shape, with the model
+  `embed` (Qwen3 Embedding, 1024 dimensions) once it's downloaded from the Models page. For
+  search, start each question with
+  `Instruct: Given a question, retrieve passages that answer the question\nQuery: ` and send
+  the passages as they are.

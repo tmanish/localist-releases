@@ -37,6 +37,12 @@ other apps need the room. When it does something on its own, it tells you why.
   left, how quickly answers are coming, and whether your Mac is running warm.
 - **Chat in a full window.** Pick what you need done, such as looking at an image or thinking
   something through, and Localist picks the model. Drop in a photo to ask about it.
+- **Ask about your documents.** Drop a PDF, Word or text file into Chat. A long one isn't cut
+  off: Localist finds the parts that answer each question, by what they mean and not only the
+  words they share with it.
+- **Use it from your coding app.** Point Xcode, VS Code, Zed or any app that speaks the OpenAI
+  format at Localist for chat, edits and completion as you type. [CODING.md](CODING.md) has the
+  steps.
 - **Choose your models.** Download others, switch which one apps get, and remove the ones you
   don't need.
 - **Get your memory back in one click.** Put the model to sleep whenever you like. It wakes
@@ -72,10 +78,14 @@ each one needs and how quickly it answers.
 |---|---|---|
 | Qwen 3.5 | Alibaba | Everyday questions, pictures, and careful step-by-step thinking. The default pick. |
 | Gemma 4 | Google | Writing, and questions about pictures. |
-| Granite 4 | IBM | Quick, focused answers and writing. The lightest of the three. |
+| Granite 4 | IBM | Quick, focused answers and writing. The lightest of these. |
+| Ornith 1.5 | Ornith AI | Coding and work that takes many steps with tools. Text only. |
+| Qwen3 Embedding | Alibaba | Not a chat model: it finds the parts of long documents that answer a question. |
 
-Smaller versions are there for Macs with less memory to spare. Only one model is awake at a
-time, and switching takes a few seconds.
+Smaller versions are there for Macs with less memory to spare. One chat model is awake at a
+time, with the small embedding model beside it when there's room, and switching takes a few
+seconds. Qwen 3.5 and Ornith also carry a small helper that guesses the next word, so code
+completion comes about 1.6 times as fast.
 
 ## Privacy
 
@@ -123,13 +133,15 @@ http://127.0.0.1:42042/v1
 
 The official OpenAI SDKs for Python and JavaScript work as they are once you point them there,
 and so do most tools that let you set a custom server address. Streaming, tool calling, JSON
-that follows a schema, and questions about images all work. [DEVELOPERS.md](DEVELOPERS.md) has
+that follows a schema, questions about images, completion as you type (`/v1/completions`) and
+text embeddings for search (`/v1/embeddings`) all work. [DEVELOPERS.md](DEVELOPERS.md) has
 examples in Python, JavaScript, Swift and curl, the model names to ask for, and what to expect
 when Localist is busy.
 
 ## Help
 
 - [User guide](HELP.md)
+- [Coding apps](CODING.md)
 - [Privacy](PRIVACY.md)
 - [For developers](DEVELOPERS.md)
 - In the app: click the gear in the Localist menu, then choose Localist Help, Privacy or For

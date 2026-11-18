@@ -62,14 +62,17 @@ The window has five pages, listed on the left:
 - **Chat.** A longer conversation than the menu bar allows. Pick what you need done (everyday
   help, looking at images, thinking it through, quick replies) and Localist picks the model. Drop
   a document or an image onto the window, or click **+**, to ask about it: PDFs, Word and text
-  files are read on your Mac, and a very long one is used from the start as far as fits. The
-  second menu picks a ready-made job, such as **Proofread**, **Summarise** or **Explain
-  simply**, or your own standing instructions. With **Think it through**, the
-  model's thinking is tucked under the answer; click it to read it. Each answer has **Copy** and
-  **Try again**, and your last 30 chats are under the clock button.
+  files are read on your Mac. A long one isn't cut off: Localist reads the parts that fit each
+  question, so you can ask about any chapter. With **Qwen3 Embedding** downloaded from the Models
+  page, on a Mac with 16 GB or more, it finds those parts by what they mean, not only by the words
+  they share with your question. The second menu picks a ready-made job, such as
+  **Proofread**, **Summarise** or **Explain simply**, or your own standing instructions. With
+  **Think it through**, the model's thinking is tucked under the answer; click it to read it.
+  Each answer has **Copy** and **Try again**, and your last 30 chats are under the clock button.
 - **Connected apps.** Which apps have used Localist, when, and how much.
-- **Settings.** Light or dark, Open at Login, whether chats are kept, how much memory to leave
-  for your other apps, how long an idle model stays awake, and how long replies may be.
+- **Settings.** Light or dark, Open at Login, waking the model as you start to ask, whether chats
+  are kept, how much memory to leave for your other apps, how long an idle model stays awake, and
+  how long replies may be.
 
 Closing the window keeps Localist running in the menu bar.
 
@@ -133,3 +136,5 @@ Closing heavy apps (video editors, games, lots of browser tabs) also gives the m
 1. Turn off Localist in System Settings ▸ General ▸ Login Items & Extensions.
 2. Quit Localist and drag it from Applications to the Trash.
 3. To free the disk space, delete the **Localist Models** folder in your home folder.
+4. Optionally, delete the **Localist** folder in your Library's Caches folder. It holds other
+   apps' recent conversations for up to a day, and empties itself after that.

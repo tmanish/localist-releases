@@ -88,7 +88,9 @@ values above. The menus in these apps move from version to version; the values s
 - Check that Localist's menu bar icon is there. If not, open Localist.
 - Make sure the address ends in `/v1` and starts with `http://`, not `https://`.
 - Use `127.0.0.1` exactly. Localist doesn't answer on your network address.
-- Tab completion as you type needs a different kind of request that Localist doesn't answer
-  yet. Chat, edits and agents work.
+- Completion as you type uses `/v1/completions`, which Localist answers. It works best with a
+  small, quick model, or at temperature 0 with Ornith 1.5 or Qwen 3.5 9B, which then run about
+  1.6 times as fast. If suggestions lag, pick a smaller model for completion in the coding app, or
+  turn completion off there and keep chat and edits.
 
 Your coding app then shows up under **Connected apps** in Localist, with how much it has asked.

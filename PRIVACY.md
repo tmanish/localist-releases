@@ -39,6 +39,13 @@ Localist recently, and how.
   Settings to stop this; that also deletes the ones already kept.
 - **A short log** of what Localist's service did: models woken and put to sleep, downloads,
   errors. It never contains what you or your apps wrote, or any answer.
+- **Other apps' recent conversations**, for a day at most. When a model that reads text only
+  (Ornith or Granite) goes to sleep, what it had worked out from an app's conversation is saved,
+  so the app's next message doesn't make it read everything again. Each file holds the words of
+  that conversation in the model's own numbering. They're in Localist's Caches folder in your
+  Library, readable only by you, and each one is deleted when it's used, after a day, or when
+  they add up to more than 2 GB. Conversations from Localist's own menu bar and Chat page are
+  never saved this way.
 - **Recent activity**: which apps asked, how quickly the model answered, and what Localist did
   on its own. It's kept in memory only, so it's gone when Localist's service restarts.
 
