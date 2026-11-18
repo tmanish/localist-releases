@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Localist</title>
+    <item>
+      <title>Localist 0.1.0</title>
+      <pubDate>Wed, 18 Nov 2026 23:52:14 +0000</pubDate>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+      <sparkle:fullReleaseNotesLink>https://github.com/tmanish/localist-releases/releases/tag/v0.1.0</sparkle:fullReleaseNotesLink>
+      <enclosure url="https://github.com/tmanish/localist-releases/releases/download/v0.1.0/Localist-0.1.0-2.dmg" length="27547541" type="application/octet-stream" sparkle:edSignature="5w3Hg8sd+RIGE+9rYTZTlxHZlU1Gny5aiEEONuRg/dojk8Wy9u+nZnUKE/QeH1Ajd74Tntm3drqBlYnvLrTxBg=="/>
+    </item>
+  </channel>
+</rss>
