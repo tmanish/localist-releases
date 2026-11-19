@@ -55,10 +55,13 @@ The window has five pages, listed on the left:
 - **Cockpit.** The memory dial, speed and heat, the apps using Localist, the models on deck, and
   everything Localist did on its own. Open **Details** for a two-hour memory timeline and the
   technical numbers, and **Copy diagnostics** if you ever need to report a problem.
+  In **On deck**, choose **Wake up** beside any downloaded model. When memory is tight or a chat
+  model needs the slot, Localist names the model it would put to sleep. Choose **Sleep and wake**
+  to switch or **Cancel** to keep the current model. **Sleep** releases an idle model.
 - **Models.** The models on your Mac and the ones you can download. Choose **Use this one** to
-  make a model the one apps get, or **Put to sleep** to free its memory. To remove a model, click
-  **…** on its card; it moves to the Trash, and emptying the Trash frees the space. Models under
-  **Coming to Localist** haven't been tested yet and can't be downloaded.
+  make a model the one apps get, or **Put to sleep** to free its memory. To remove a model, choose
+  **… → Remove Download**. The files move to the Trash. Its catalog card offers **Download**
+  again, and emptying the Trash reclaims the disk space.
 - **Chat.** A longer conversation than the menu bar allows. Pick what you need done (everyday
   help, looking at images, thinking it through, quick replies) and Localist picks the model. Drop
   a document or an image onto the window, or click **+**, to ask about it: PDFs, Word and text
@@ -104,10 +107,19 @@ To get the memory back right away, open the menu and choose **Put to sleep**.
 
 ## Models
 
+The **Models** page downloads files from the [Hugging Face model directory](https://huggingface.co/models).
+**Picks for 16 GB Macs** lists curated 4-bit models for Apple silicon. The fit estimate uses the model
+size and context length. A **Tested** badge means that exact variant ran in Localist on a 24 GB Mac.
+
+1. Choose **Browse Hugging Face** to open the directory in your browser. Each card’s **Model on Hugging Face** link opens the exact download repository.
+2. Copy the publisher’s model page or its supported MLX repository URL. In Localist, open **Models → Add from link** and paste it.
+3. Check the variant and download size, then choose **Download**. You can also choose **Download** directly on a card.
+
+Localist installs versions listed in its catalog. Some MLX conversions are published by community organizations.
+The app pins the revision and checks the downloaded files. Choose **On this Mac** to see downloads and installed models. **All models** keeps each card in place as you download or remove its files.
+
 Your models are kept in the **Localist Models** folder in your home folder. To open it, click
 the gear in the menu and choose **Show Models Folder**.
-
-Each model is checked file by file after it downloads, so a damaged download is never used.
 
 If a download stops, choose **Resume**. Localist keeps what already arrived and picks up from
 there.
@@ -115,7 +127,7 @@ there.
 ## The gear menu
 
 - **Open Localist** opens the window.
-- **Settings…** opens the Settings page.
+- **Settings** opens the Settings page.
 - **Open at Login** starts the menu bar app when you log in. Your apps can still use Localist
   without it, because the background part runs on its own.
 - **Restart Localist's Service** restarts the background part. A model in memory is put to

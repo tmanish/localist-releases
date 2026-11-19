@@ -71,8 +71,9 @@ other apps need the room. When it does something on its own, it tells you why.
 
 ## Models
 
-Localist starts with a short list of models it has tried on real Macs, checking how much memory
-each one needs and how quickly it answers.
+The Models page includes ten picks for 16 GB Apple silicon Macs, with estimated memory use
+for each one. A **Tested** badge means that exact variant ran in Localist on a 24 GB Mac.
+The catalog includes the following models.
 
 | Model | Made by | Good at |
 |---|---|---|
@@ -80,7 +81,12 @@ each one needs and how quickly it answers.
 | Gemma 4 | Google | Writing, and questions about pictures. |
 | Granite 4 | IBM | Quick, focused answers and writing. The lightest of these. |
 | Ornith 1.5 | Ornith AI | Coding and work that takes many steps with tools. Text only. |
+| Nemotron 3.5 Bolt E4B | NVIDIA | Text chat and reasoning. |
 | Qwen3 Embedding | Alibaba | Not a chat model: it finds the parts of long documents that answer a question. |
+
+Choose **Download** on a card, or browse Hugging Face and paste a supported model page
+into **Models → Add from link**. Localist downloads the pinned model files and verifies them.
+[Browse Hugging Face](https://huggingface.co/models)
 
 Smaller versions are there for Macs with less memory to spare. One chat model is awake at a
 time, with the small embedding model beside it when there's room, and switching takes a few
