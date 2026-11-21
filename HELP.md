@@ -108,12 +108,15 @@ To get the memory back right away, open the menu and choose **Put to sleep**.
 ## Models
 
 The **Models** page downloads files from the [Hugging Face model directory](https://huggingface.co/models).
-**Picks for 16 GB Macs** lists curated 4-bit models for Apple silicon. The fit estimate uses the model
-size and context length. A **Tested** badge means that exact variant ran in Localist on a 24 GB Mac.
+**Best Pick** stays first. **Tested in Localist** lists variants that ran on a 24 GB Apple silicon Mac. Chat speed is the median output tokens per second across three warm replies. An embedding model has its own task and follows the tested chat models.
+
+**Untested in Localist** lists the remaining variants by published MMLU-Pro accuracy for their upstream models. Evaluation settings vary and quantization can change accuracy. Models without a recorded score follow the scored models. The fit badge uses the model size and context length.
 
 1. Choose **Browse Hugging Face** to open the directory in your browser. Each card’s **Model on Hugging Face** link opens the exact download repository.
-2. Copy the publisher’s model page or its supported MLX repository URL. In Localist, open **Models → Add from link** and paste it.
+2. Copy the publisher’s model page or its supported download repository URL. In Localist, open **Models → Add from link** and paste it.
 3. Check the variant and download size, then choose **Download**. You can also choose **Download** directly on a card.
+
+For **Inkling 2 Mini**, open **Models → Tested in Localist**, download the 9.14 GB file, choose **Use this one**, and open **Chat**. Localist runs the 2-bit GGUF with its built-in llama.cpp engine. This edition supports text and a 2,048-token conversation including the reply. On 16 GB Macs the fit is tight, so start a new chat for longer conversations.
 
 Localist installs versions listed in its catalog. Some MLX conversions are published by community organizations.
 The app pins the revision and checks the downloaded files. Choose **On this Mac** to see downloads and installed models. **All models** keeps each card in place as you download or remove its files.
