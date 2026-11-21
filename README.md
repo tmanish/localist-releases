@@ -80,7 +80,7 @@ The Models page pins **Best Pick** first, then lists tested chat models by measu
 | Granite 4 | IBM | Quick, focused answers and writing. The lightest of these. |
 | Ornith 1.5 | Ornith AI | Coding and work that takes many steps with tools. Text only. |
 | Nemotron 3.5 Bolt E4B | NVIDIA | Text chat and reasoning. |
-| Inkling 2 Mini | Thinking Machines Lab | Text chat in Localist using a 2-bit GGUF. The download is 9.14 GB and the conversation limit is 2,048 tokens including the reply. Memory is tight on a 16 GB Mac. |
+| Inkling 2 Mini | Thinking Machines Lab | Download 9.14 GB for text chat. Choose **Add vision · 639 MB** on the model card to ask about screenshots and photos. Text, images and the reply share 2,048 tokens. Memory is tight on a 16 GB Mac. |
 | Qwen3 Embedding | Alibaba | Not a chat model: it finds the parts of long documents that answer a question. |
 
 Choose **Download** on a card, or browse Hugging Face and paste a supported model page

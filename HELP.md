@@ -116,7 +116,9 @@ The **Models** page downloads files from the [Hugging Face model directory](http
 2. Copy the publisher’s model page or its supported download repository URL. In Localist, open **Models → Add from link** and paste it.
 3. Check the variant and download size, then choose **Download**. You can also choose **Download** directly on a card.
 
-For **Inkling 2 Mini**, open **Models → Tested in Localist**, download the 9.14 GB file, choose **Use this one**, and open **Chat**. Localist runs the 2-bit GGUF with its built-in llama.cpp engine. This edition supports text and a 2,048-token conversation including the reply. On 16 GB Macs the fit is tight, so start a new chat for longer conversations.
+For **Inkling 2 Mini**, download the 9.14 GB text model, choose **Use this one**, and open **Chat**. To ask about a screenshot or photo, choose **Add vision · 639 MB** on its model card. When **Sees images** appears, attach the image in Chat and ask your question. Choose **Remove vision download** in the card’s **…** menu to keep just the text model.
+
+Inkling shares its 2,048-token limit between your conversation, images and reply. Crop a screenshot to the area you want to read, especially when the text is small.
 
 Localist installs versions listed in its catalog. Some MLX conversions are published by community organizations.
 The app pins the revision and checks the downloaded files. Choose **On this Mac** to see downloads and installed models. **All models** keeps each card in place as you download or remove its files.
