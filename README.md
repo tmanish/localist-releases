@@ -92,6 +92,10 @@ time, with the small embedding model beside it when there's room, and switching 
 seconds. Qwen 3.5 and Ornith also carry a small helper that guesses the next word, so code
 completion comes about 1.6 times as fast.
 
+## Coming soon
+
+Two sidebar entries show what is planned. **Always on Agent** will help with tasks in folders you choose. **Teach your model** will let you ask questions about your documents, code repositories, and datasets, and teach a supported model from examples you review. Both entries carry a **Soon** badge in version 0.1.5.
+
 ## Privacy
 
 What you type and every answer stay on your Mac. Nothing about you or how you use the app is

@@ -3,6 +3,15 @@
   <channel>
     <title>Localist</title>
     <item>
+      <title>Localist 0.1.5</title>
+      <pubDate>Sun, 22 Nov 2026 01:55:40 +0000</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>0.1.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+      <sparkle:fullReleaseNotesLink>https://github.com/tmanish/localist-releases/releases/tag/v0.1.5</sparkle:fullReleaseNotesLink>
+      <enclosure url="https://github.com/tmanish/localist-releases/releases/download/v0.1.5/Localist-0.1.5-7.dmg" length="31673374" type="application/octet-stream" sparkle:edSignature="DekRUIih8gXRwOeZX1D1C8P9BkGtt6hdKcVDTtSNSNfjI/g0sK5lwRsiRViDJfqYMdHHejnlc0NOkFa2upigAw=="/>
+    </item>
+    <item>
       <title>Localist 0.1.4</title>
       <pubDate>Sat, 21 Nov 2026 23:33:53 +0000</pubDate>
       <sparkle:version>6</sparkle:version>
